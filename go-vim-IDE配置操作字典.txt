@@ -1,0 +1,29 @@
+
+
+1.跳转到定义处--godef
+gd
+
+2.显示当前文件tags--gotags
+tb
+
+3.切换活动窗口--MiniBuffExploer
+ 如果在~/.vimrc中设置了下面这句:
+ let g:miniBufExplMapWindowNavVim = 1
+ 则可以用<Ctrl + h,j,k,l>切换到上下左右的窗口中去,就像:
+ 传统模式是使用 Ctrl + w   然后再h,j,k,l进行切换
+
+4.快速关闭当前tab文件，而不影响其他tab已打开文件
+  首先按照3切换到要关闭tab页，按d即可关闭
+
+5.快速前后翻tab文件,非常适合gd调转到其他文件返回使用
+  :bn   打开当前buffer的下一个buffer
+  :bp   打开当前buffer的前一个buffer
+  :bd   关闭当前打开文件
+
+6.快速切换到一代开tab页面
+  首先按照3切换到minibuf窗口，按照tab顺序依次选中文件，Ctrl+tab逆序依次选中文件 
+  按 Enter 打开文件
+  按 d 关闭该文件
+  
+7.本文件跳转，移动到上一次光标处:
+  ``
