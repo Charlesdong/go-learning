@@ -1,0 +1,11 @@
+{{range .blogs}}
+<ul class="list-inline">
+<div class="col-md-6"> <li> <a href="/view/{{.Id}}">{{.Title}}</a> </li> </div>
+<div class="col-md-2"> <li> {{date .Created "Y-m-d H:i:s"}} </li> </div>
+<div class="col-md-2"> <li> <a href="/edit/{{.Id}}">Edit</a> </li> </div>
+<div class="col-md-2"> <li> <a href="/delete/{{.Id}}">Delete</a> </li> </div>
+<li class="divider"></li>
+</ul>
+<hr>
+{{end}}
+
